@@ -1,0 +1,104 @@
+\documentclass[a4paper]{article}
+
+\usepackage[LGR]{fontenc}
+\usepackage{titling}
+\usepackage[greek]{babel}
+\usepackage{amsmath}
+
+\author{Παύλος Ορφανίδης \and Γιώργος Χατζηλίγος \and Σπύρος Κοντάκης}
+\date{\today}
+\title{Υπολογιστικά Μαθηματικά 2021--2022}
+
+\newcommand{\dd}[1]{\mathrm{d}#1}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \section*{Γενικά δεδομένα}
+        \begin{equation}
+            ms'' = (f_1+f_2)-b_s\rvert s' \lvert s'
+        \end{equation}
+        \begin{equation}
+            I_z\omega '=\frac{d}{2}(f_2-f_1)-b_{\theta}\rvert\omega\lvert\omega
+        \end{equation}
+        \begin{equation}
+            s(0)=s_0
+        \end{equation}
+        \begin{equation}
+            s'(0)=0,\quad \omega(0)=0
+        \end{equation}
+        \[m=9kg\]
+        \[d=1m\]
+        \[I_z=0.38 kgm^2\]
+% -------------------------------------------------------------
+    \section{Πρόβλημα 1}
+        \subsection{Nα βρεθούν οι τύποι για την επίλυση του $\Pi.A.T$ με την Mέθοδο του $Euler$ και την βελτιωμένη μέθοδο του $Euler$ με τις παρακάτω τιμές για τις εισόδους και τις αρχικές συνθήκες}
+        \subsubsection*{$Euler$ $s'$}
+        Έχουμε από τα δεδομένα ότι:
+        \begin{equation}
+            s''=f'(x,y)=(f1+f2)-bs|s'|s'
+        \end{equation}
+        \begin{equation}
+            s'=f(x,y)
+        \end{equation}
+        \[{[f_1,f_2]}^T={[A.M./7000, A.M./7000]}^T\]
+        \[{[f_1,f_2]}^T={[A.M./7000, A.M./8000]}^T\]
+        \[s_0=A.M./1000\]
+        \[\theta_0=0\]
+
+        Εφαρμόζουμε την μέθοδο $Euler$:
+        \[t_n=t_0+nh\]
+        το οποίο σημαίνει ότι:
+        \[t_1=t_0+1h\]
+        \[t_2=t_0+2h\]
+        \[.\]
+        \[.\]
+        \[.\]
+        \[t_n=t_0+nh\]
+
+        \hrulefill{}
+
+        \[s'_{n+1}=s'_n+hf'(t,y)n\]
+        To οποίο σημαίνει ότι:
+        \[s'_1=s'_0+hs''_0\]
+        \[s'_2=s'_1+hs''_1\]
+        \[.\]
+        \[.\]
+        \[.\]
+        
+        \subsubsection*{Bελτιωμένη μέθοδος $Euler$ $s'$}
+        Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$:
+        \[t_n=t_0+nh\]
+        το οποίο σημαίνει ότι:
+        \[t_1=t_0+1h\]
+        \[t_2=t_0+2h\]
+        \[.\]
+        \[.\]
+        \[.\]
+        \[t_n=t_0+nh\]
+
+        \hrulefill{}
+        \[s'_{n+1}=s'_n+\frac{h}{2}{[f'(t_n, s'_n)+f'(t_n+h, s'_n+hf'(t_n,s'_n))]}\]
+        'Ara
+        \[s'_n+\frac{h}{2}{[\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}+\frac{f_1+f_2}{m}-\frac{\lvert s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}\rvert}{m}\frac{(s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m})}{m}]}\]
+        
+        \subsubsection*{$Euler$ $s$}
+        Εφαρμόζουμε την μέθοδο $Euler$:
+        \[t_n=t_0+nh\]
+        το οποίο σημαίνει ότι:
+        \[t_1=t_0+1h\]
+        \[t_2=t_0+2h\]
+        \[.\]
+        \[.\]
+        \[.\]
+        \[t_n=t_0+nh\]
+
+        \hrulefill{}
+
+        \[s_{n+1}=s_n+hf(t,s)n\]
+        το οποίο σημαίνει ότι:
+        \[s_{n+1}=s_n+hs'_n\]
+        \[s_1=s_0+hs'_0\]
+
+        \subsection{ερώτημα 1}
+\end{document}
