@@ -1,4 +1,5 @@
 \babel@toc {greek}{}
-\contentsline {section}{\numberline {1}Πρόβλημα 1}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Nα βρεθούν οι τύποι για την επίλυση του $\Pi .A.T$ με την Mέθοδο του $Euler$ και την βελτιωμένη μέθοδο του $Euler$ με τις παρακάτω τιμές για τις εισόδους και τις αρχικές συνθήκες}{1}{}%
-\contentsline {subsection}{\numberline {1.2}ερώτημα γ: Μέθοδος Euler}{3}{}%
+\contentsline {section}{\numberline {1}Πρόβλημα 1}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Nα βρεθούν οι τύποι για την επίλυση του $\Pi .A.T$ με την Mέθοδο του $Euler$ και την βελτιωμένη μέθοδο του $Euler$ με τις παρακάτω τιμές για τις εισόδους και τις αρχικές συνθήκες}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}ερώτημα γ: Μέθοδος Euler}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Δεδομένα:}{3}{subsubsection.1.2.1}%
