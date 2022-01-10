@@ -147,33 +147,29 @@
             
         
 
-        Μεταφορική Κίνηση
+        \subsection{Μεταφορική Κίνηση}
 
-        %s’ = - [ [ (f1 + f2 ) - Kps (sdes – s) ]/ Kds ] = f(t,s)
+        \[s' = - [ [ (f_1 + f_2 ) - Kps (s_{des} - s) ]/ K_{ds} ] = f(t,s)\]
 
-        Άρα, για την συνάρτηση s(t) έχουμε:
-
-        ~ tn = t0 + nh					~sn+1 = sn  + hs’n
-
-        t1 = t0  + 1h					   s1    = s0  + hs’­­­0
-        t2 = t0  + 2h					   s2    = s1  + hs’1
-            .						     .
-            .						     .
-            .						     .
-        t30.000 = t0 + 30.000h			    s30.000 = s29.999 + hs’29.999
-            
-        Για την συνάρτηση s’(t):
-
-            S’’	= Kps(sdes - s) – Kds(s’) – bs|s’|s’
-
-            Άρα, προκύπτει:
-
-        ~ tn = t0 + nh					~s’n+1 = s’n  + hs’’n
-
-        t1 = t0  + 1h					   s’1    = s’0  + hs’’­­­0
-        t2 = t0  + 2h					   s2    = s’1  + hs’’1
-            .						     .
-            .						     .
-            .						     .
-        t30.000 = t0 + 30.000h			   s30.000 = s29.999 + hs’’29.999
+        Άρα, για την συνάρτηση $s(t)$ έχουμε:
+        
+        \begin{tabular}{ll}
+            $t_n = t_0 + nh$		&			$s_{n+1} = s_n  + hs'_n$ \\
+            $t_1 = t_0  + 1h$			&		   $s_1    = s_0  + hs'_0$ \\
+            $t_2 = t_0  + 2h$			&		   $s_2    = s_1  + hs'_1$ \\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            $t_{30.000} = t_0 + 30.000h$&			    $s30.000 = s29.999 + hs'29.999$\\
+            \multicolumn{2}{l}{Για την συνάρτηση $s'(t)$:}\\
+            \multicolumn{2}{c}{$S''	= K_{ps}(s_{des} - s) - K_{ds}(s') - b_s|s'|s'$}\\
+            \multicolumn{2}{l}{Άρα, προκύπτει:}\\
+            $t_n = t_0 + nh$		&			$s'_{n+1} = s''_n  + hs''_n$\\
+            $t_1 = t_0  + 1h$			&		   $s'_1    = s'_0  + hs''_0$\\
+            $t_2 = t_0  + 2h$			&		   $s_2    = s'_1  + hs''_1$\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            $t_{30.000} = t_0 + 30.000h$&			   $s_{30.000} = s_{29.999} + hs''29.999$
+        \end{tabular}
 \end{document}
