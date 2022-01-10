@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.23)  10 JAN 2022 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.23)  10 JAN 2022 13:30
 entering extended mode
 **h:/Programming/Maths/documentation/solution.tex
 (h:/Programming/Maths/documentation/solution.tex
@@ -681,35 +681,35 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [1
 
 {C:/Users/porfa/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (74.10269pt too wide) in paragraph at lines 97--109
+Overfull \hbox (74.10269pt too wide) in paragraph at lines 97--108
 [] 
  []
 
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 129.
+(hyperref)                removing `math shift' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 129.
+(hyperref)                removing `math shift' on input line 128.
 
 [3] [4] (solution.aux)
 Package rerunfilecheck Info: File `solution.out' has not changed.
 (rerunfilecheck)             Checksum: 40046BEDB4971B33EB05DEC9C25984D2;2696.
  ) 
 Here is how much of TeX's memory you used:
- 10810 strings out of 478838
- 162521 string characters out of 2848020
+ 10801 strings out of 478838
+ 162412 string characters out of 2848020
  481331 words of memory out of 3000000
- 28599 multiletter control sequences out of 15000+600000
+ 28595 multiletter control sequences out of 15000+600000
  412162 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,11n,66p,1436b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/grmn1000.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/grmn1200.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/grmn1728.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/grxn1000.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/grxn1200.pfb><C:/Users/porfa/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/grxn1440.pfb>
-Output written on solution.pdf (4 pages, 242853 bytes).
+Output written on solution.pdf (4 pages, 242008 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
