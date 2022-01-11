@@ -4,6 +4,7 @@
 \usepackage{titling}
 \usepackage[greek]{babel}
 \usepackage{amsmath}
+\usepackage{breqn}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -72,7 +73,7 @@
         \end{equation}
         \[{[f_1,f_2]}^T={[A.M./7000, A.M./7000]}^T\]
         \[{[f_1,f_2]}^T={[A.M./7000, A.M./8000]}^T\]
-        \[s_0=A.M./1000\]
+        \[s_0=\frac{A.M.}{1000}\]
         \[\theta_0=0\]
 
         
@@ -130,13 +131,15 @@
         \subsubsection{Δεδομένα:}
             \[f_1 + f_2 = Kps (sdes - s) - Kds (s')\]
             \[K_{ps} = 5\]
-            \[K_{ds} = 15 + (AM/ 100)\]
+            \[K_{ds} = 15 + \frac{AM}{100}\]
             \[S_0 =0\]
-            \[S_{des} = AM / 200\]
+            \[S_{des} = \frac{AM}{200}\]
 
         \subsection{Μεταφορική Κίνηση}
-
-        \[s' = - [ [ (f_1 + f_2 ) - Kps (s_{des} - s) ]/ K_{ds} ] = f(t,s)\]
+%----------------------------------------------------------------------------------
+% Μπορεί να έχει λάθη
+%----------------------------------------------------------------------------------
+        \[s' =  \frac{ (f_1 + f_2 ) - Kps (s_{des} - s)}{ K_{ds} } = f(t,s)\]
 
         Άρα, για την συνάρτηση $s(t)$ έχουμε:
         
@@ -176,27 +179,31 @@
         \[S_{des} = AM / 200\]
 
         \subsubsection{Μεταφορική Κίνηση}   
-            Για την s(t):
+        Για την $s(t)$:
 
-        tn = t0 + nh					sn+1 = sn  + hs’n
+        \begin{tabular}{ll}
+            $t_n = t_0 + nh$		&			$s_{n+1} = s_n  + hs'_n$\\
+            $t_1 = t_0  + 1h$		&			$s_1    = s_0  + hs'_0$\\
+            $t_2 = t_0  + 2h$		&			$s_2    = s_1  + hs'_1$\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            $t_{30.000} = t_0 + 30.000h$&			     $s_{30.000} = s_{29.999} + hs'_{29.999}$
+        \end{tabular}
 
-        t1 = t0  + 1h					   s1    = s0  + hs’0
-        t2 = t0  + 2h					   s2    = s1  + hs’1
-            .						     .
-            .						     .
-            .						     .
-        t30.000 = t0 + 30.000h			     s30.000 = s29.999 + hs’29.999
 
 
+        \begin{dmath}
+            s_{n+1}=
+                    s_n + \frac{h}{2}[f(t_n, s_n) + f(t_n + h, s_n + h (f(t_n,s_n ))]
+                    =s_n+ \frac{h}{2}[f (t_n, s_n) + [- (t_1+t_2)-K_{ps} (s_{des}- (s_n + h (\frac{- (f_1 + f_2)-K_{ps} (s_{des}-s_n)}{m}))]|K_{ds}
+        \end{dmath}
 
+        Για τη $s'(t)$:
 
-        sn+1 = sn + (h/2) * [ f (tn, sn) + f (tn + h, sn + h (  f (  tn,sn ))]
-                = sn  + (h/2) * [ f (tn, sn) + [ - (t1 + t2) – Kps ( sdes – ( sn + h([ - (f1 + f2 ) - Kps*              
-                                                                                                * (sdes – sn) ]/ m))]|Kds
-
-        Για τη s’(t):
-        s’n+1 = s’n + (h/2) * [f’(tn, sn) + f (tn + h, s’n + h (  f’ (  tn,sn ))]]
+        \[s'_{n+1} = s'_n + \frac{h}{2}[f'(t_n, s_n) + f (t_n + h, s'_n + h (  f' (t_n,s_n )))]\]
 
         Οπότε,
-        S’n  + (h/2) * [  f’  (tn, sn) + [ [(f1 + f2) – bs (s’n + h  |  (f1 + f2) – bs|s’n |s’n]  /  m  |  [ S’n + h (f1 + f2)  - bs |s’n|s’n ] / m  |  m 
+
+        \[s'_n  + (h/2)(f'(t_n, s_n) + \frac{(f_1 + f_2) - b_s (s'_n + h  \lvert  (f_1 + f_2) - b_s\rvert s'_n |s'_n}{m}  \lvert  \frac{S'_n + h (f_1 + f_2)  - b_s |s'_n|s'_n}{m}  \rvert  m) \]
 \end{document}
