@@ -4,17 +4,43 @@
 \usepackage{titling}
 \usepackage[greek]{babel}
 \usepackage{amsmath}
+\usepackage{breqn}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
+%------------------------------------------------------------------------------------------------
+% basic info (date, title etc...)
+%------------------------------------------------------------------------------------------------
 \author{Παύλος Ορφανίδης \and Γιώργος Χατζηλίγος \and Σπύρος Κοντάκης}
 \date{\today}
 \title{Υπολογιστικά Μαθηματικά 2021--2022}
 
+%------------------------------------------------------------------------------------------------
+% Adding the option to append a number next to equations
+%------------------------------------------------------------------------------------------------
 \newcommand{\dd}[1]{\mathrm{d}#1}
 
 \begin{document}
+%------------------------------------------------------------------------------------------------
+% Creating the title and the contents page
+%------------------------------------------------------------------------------------------------
     \maketitle
     \tableofcontents
+
+%------------------------------------------------------------------------------------------------
+% Creating a first section that includes general data given by the instructor
+%------------------------------------------------------------------------------------------------
+
     \section*{Γενικά δεδομένα}
+        \begin{equation}
+            AM = 4835
+        \end{equation}
         \begin{equation}
             ms'' = (f_1+f_2)-b_s\rvert s' \lvert s'
         \end{equation}
@@ -30,75 +56,154 @@
         \[m=9kg\]
         \[d=1m\]
         \[I_z=0.38 kgm^2\]
-% -------------------------------------------------------------
+%------------------------------------------------------------------------------------------------
+% Excersise 1
+%------------------------------------------------------------------------------------------------
     \section{Πρόβλημα 1}
         \subsection{Nα βρεθούν οι τύποι για την επίλυση του $\Pi.A.T$ με την Mέθοδο του $Euler$ και την βελτιωμένη μέθοδο του $Euler$ με τις παρακάτω τιμές για τις εισόδους και τις αρχικές συνθήκες}
+        
+        
         \subsubsection*{$Euler$ $s'$}
         Έχουμε από τα δεδομένα ότι:
         \begin{equation}
-            s''=f'(x,y)=(f1+f2)-bs|s'|s'
+            s''=f'(t,s')=(f1+f2)-bs|s'|s'
         \end{equation}
         \begin{equation}
-            s'=f(x,y)
+            s'=f(t,s)
         \end{equation}
         \[{[f_1,f_2]}^T={[A.M./7000, A.M./7000]}^T\]
         \[{[f_1,f_2]}^T={[A.M./7000, A.M./8000]}^T\]
-        \[s_0=A.M./1000\]
+        \[s_0=\frac{A.M.}{1000}\]
         \[\theta_0=0\]
 
-        Εφαρμόζουμε την μέθοδο $Euler$:
-        \[t_n=t_0+nh\]
-        το οποίο σημαίνει ότι:
-        \[t_1=t_0+1h\]
-        \[t_2=t_0+2h\]
-        \[.\]
-        \[.\]
-        \[.\]
-        \[t_n=t_0+nh\]
-
-        \hrulefill{}
-
-        \[s'_{n+1}=s'_n+hf'(t,y)n\]
-        To οποίο σημαίνει ότι:
-        \[s'_1=s'_0+hs''_0\]
-        \[s'_2=s'_1+hs''_1\]
-        \[.\]
-        \[.\]
-        \[.\]
         
+            \begin{tabular}{ll}
+                Εφαρμόζουμε την μέθοδο $Euler$:                             &                               \\
+                $t_n=t_0+nh$                                                & $s'_{n+1}=s'_n+hf'(t,s')_n$   \\
+                το οποίο σημαίνει ότι:                                      & $s'_1=s'_0+hs''_0$            \\
+                $t_1=t_0+1h$                                                & $s'_2=s'_1+hs''_1$            \\
+                $t_2=t_0+2h$                                                & .                             \\
+                .                                                           & .                             \\
+                .                                                           & .                             \\
+                .                                                           &                               \\
+                $t_n=t_0+nh$                                                &                         
+            \end{tabular}
+
+
+
+
+
         \subsubsection*{Bελτιωμένη μέθοδος $Euler$ $s'$}
-        Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$:
-        \[t_n=t_0+nh\]
-        το οποίο σημαίνει ότι:
-        \[t_1=t_0+1h\]
-        \[t_2=t_0+2h\]
-        \[.\]
-        \[.\]
-        \[.\]
-        \[t_n=t_0+nh\]
 
-        \hrulefill{}
-        \[s'_{n+1}=s'_n+\frac{h}{2}{[f'(t_n, s'_n)+f'(t_n+h, s'_n+hf'(t_n,s'_n))]}\]
-        'Ara
-        \[s'_n+\frac{h}{2}{[\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}+\frac{f_1+f_2}{m}-\frac{\lvert s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}\rvert}{m}\frac{(s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m})}{m}]}\]
+        \begin{tabular}{ll}
+            \multicolumn{2}{c}{Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$: }\\
+            $t_n=t_0+nh$ & $s'_{n+1}=s'_n+\frac{h}{2}{[f'(t_n, s'_n)+f'(t_n+h, s'_n+hf'(t_n,s'_n))]}$\\
+            το οποίο σημαίνει ότι:& \\
+            $t_1=t_0+1h$          & $s'_n+\frac{h}{2}{[\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}+\frac{f_1+f_2}{m}-\frac{\lvert s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}\rvert}{m}\frac{(s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m})}{m}]}$\\
+            $t_2=t_0+2h$          & \\
+            .                     & \\
+            .                     & \\
+            .                     & \\
+            $t_n=t_0+nh$ & \\
+        \end{tabular}
         
-        \subsubsection*{$Euler$ $s$}
-        Εφαρμόζουμε την μέθοδο $Euler$:
-        \[t_n=t_0+nh\]
-        το οποίο σημαίνει ότι:
-        \[t_1=t_0+1h\]
-        \[t_2=t_0+2h\]
-        \[.\]
-        \[.\]
-        \[.\]
-        \[t_n=t_0+nh\]
+        
+        
+        
+        \subsubsection*{Bελτιωμένη μέθοδος $Euler$ $s$}
+        \begin{tabular}{ll}
+            \multicolumn{2}{c}{Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$: }\\
+            $t_n=t_0+nh$ & $s_{n+1}=s_n+hf(t,s)n$\\
+            το οποίο σημαίνει ότι: & \\
+            $t_1=t_0+1h$ & $s_{n+1}=s_n+hs'_n$\\
+            $t_2=t_0+2h$ & $s_1=s_0+hs'_0$\\
+            . & \\
+            . & \\
+            . & \\
+            $t_n=t_0+nh$ & \\
+        \end{tabular}
 
-        \hrulefill{}
+%------------------------------------------------------------------------------------------------
+% Excersise 1γ
+%------------------------------------------------------------------------------------------------
+        \subsection{Eρώτημα γ: Μέθοδος $Euler$}
 
-        \[s_{n+1}=s_n+hf(t,s)n\]
-        το οποίο σημαίνει ότι:
-        \[s_{n+1}=s_n+hs'_n\]
-        \[s_1=s_0+hs'_0\]
+        \subsubsection{Δεδομένα:}
+            \[f_1 + f_2 = Kps (sdes - s) - Kds (s')\]
+            \[K_{ps} = 5\]
+            \[K_{ds} = 15 + \frac{AM}{100}\]
+            \[S_0 =0\]
+            \[S_{des} = \frac{AM}{200}\]
 
-        \subsection{ερώτημα 1}
+        \subsection{Μεταφορική Κίνηση}
+%----------------------------------------------------------------------------------
+% Μπορεί να έχει λάθη
+%----------------------------------------------------------------------------------
+        \[s' =  \frac{ (f_1 + f_2 ) - Kps (s_{des} - s)}{ K_{ds} } = f(t,s)\]
+
+        Άρα, για την συνάρτηση $s(t)$ έχουμε:
+        
+        \begin{tabular}{ll}
+            $t_n = t_0 + nh$		&			$s_{n+1} = s_n  + hs'_n$ \\
+            $t_1 = t_0  + 1h$			&		   $s_1    = s_0  + hs'_0$ \\
+            $t_2 = t_0  + 2h$			&		   $s_2    = s_1  + hs'_1$ \\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            $t_{30.000} = t_0 + 30.000h$&			    $s30.000 = s29.999 + hs'29.999$\\
+            \multicolumn{2}{l}{Για την συνάρτηση $s'(t)$:}\\
+            \multicolumn{2}{c}{$S''	= K_{ps}(s_{des} - s) - K_{ds}(s') - b_s|s'|s'$}\\
+            \multicolumn{2}{l}{Άρα, προκύπτει:}\\
+            $t_n = t_0 + nh$		&			$s'_{n+1} = s''_n  + hs''_n$\\
+            $t_1 = t_0  + 1h$			&		   $s'_1    = s'_0  + hs''_0$\\
+            $t_2 = t_0  + 2h$			&		   $s_2    = s'_1  + hs''_1$\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            $t_{30.000} = t_0 + 30.000h$&			   $s_{30.000} = s_{29.999} + hs''29.999$
+        \end{tabular}
+
+
+% Βελτιωμένη μέθοδος Euler
+
+
+
+        \subsection{Πρόβλημα 1γ: Βελτιωμένη Μέθοδος Euler}
+
+        \subsubsection{Δεδομένα}
+
+        \[f_1 + f_2 = K_{ps}(s_{des} - s) - K_{ds}(s')\]
+        \[K_{ps} = 5\]
+        \[K_{ds} = 15 + (AM/ 100)\]
+        \[S_0 =0\]
+        \[S_{des} = AM / 200\]
+
+        \subsubsection{Μεταφορική Κίνηση}   
+        Για την $s(t)$:
+
+        \begin{tabular}{ll}
+            $t_n = t_0 + nh$		&			$s_{n+1} = s_n  + hs'_n$\\
+            $t_1 = t_0  + 1h$		&			$s_1    = s_0  + hs'_0$\\
+            $t_2 = t_0  + 2h$		&			$s_2    = s_1  + hs'_1$\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            \multicolumn{2}{c}{.}\\
+            $t_{30.000} = t_0 + 30.000h$&			     $s_{30.000} = s_{29.999} + hs'_{29.999}$
+        \end{tabular}
+
+
+
+        \begin{dmath}
+            s_{n+1}=
+                    s_n + \frac{h}{2}[f(t_n, s_n) + f(t_n + h, s_n + h (f(t_n,s_n ))]
+                    =s_n+ \frac{h}{2}[f (t_n, s_n) + [- (t_1+t_2)-K_{ps} (s_{des}- (s_n + h (\frac{- (f_1 + f_2)-K_{ps} (s_{des}-s_n)}{m}))]|K_{ds}
+        \end{dmath}
+
+        Για τη $s'(t)$:
+
+        \[s'_{n+1} = s'_n + \frac{h}{2}[f'(t_n, s_n) + f (t_n + h, s'_n + h (  f' (t_n,s_n )))]\]
+
+        Οπότε,
+
+        \[s'_n  + (h/2)(f'(t_n, s_n) + \frac{(f_1 + f_2) - b_s (s'_n + h  \lvert  (f_1 + f_2) - b_s\rvert s'_n |s'_n}{m}  \lvert  \frac{S'_n + h (f_1 + f_2)  - b_s |s'_n|s'_n}{m}  \rvert  m) \]
 \end{document}
