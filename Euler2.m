@@ -15,6 +15,8 @@ function Euler()
   t = 0:0.1:30
   t = 0:0.1:30
   display(length(t))
+  # --------------- Transportation ---------------- #
+  
   s1=0
   #s2= [(f1+f2) - bs*abs(s1)*s1]/9
   s = zeros(1,length(t))
@@ -23,14 +25,28 @@ function Euler()
   s2 = zeros(1,length(t))
   s1(1) = 0 
   s(1)=AM/4835
+  
+  # ---------------- Rational ---------------------- #
+  
+  
+  w = zeros(1,length(t))
+  w1 = zeros (1,length(t))
+  
+  
+  # ----------- PROGRAM BEGINS ---------------#
+  
   # --------------------------- Euler Method 1 --------------------------#
 
-
+  
 
   # ----- new ------ #
   #s2= ((f1+f2) - bs*abs(s1)*s1)/m
   #s2(1) = ((f1+f2)+bs*(abs(s1(1))*s1(1)))
-
+  
+  
+  # --------------- Transportation Move ---------------- #
+  
+   
   for k = 1 : length(t)*(t+1)
     s2(k)= (((f1+f2)+bs*(abs(s1(k))*s1(k))))/m
     s1(k+1) = s1(k) + h*s2(k)
@@ -43,12 +59,24 @@ function Euler()
   plot(s1)
   
   figure(2)
-  for k = 1 : length(t)*(t+1)
+  for k = 1 : length(t)*(t)
     s(k+1) = s(k)+h*s1(k)
   endfor
   plot(s)
-    
   
+  # ---------------- Rational Move ---------------------- #
+  w(1) = 0
+  for k = 1: length(t)*(t)
+    w1(k)=(d/2*(f2-f1) - bu*abs(w(k))*w(k))
+    w(k+1) = w(k)+h*w1(k)
+  endfor
+  
+  plot(w1)
+  plot(w)  
+  
+  
+  
+  # ----------- SECOND ------------ #
   
     
   #---------------- Data ----------------#
@@ -80,7 +108,11 @@ function Euler()
   # ----- new ------ #
   #s2= ((f1+f2) - bs*abs(s1)*s1)/m
   #s2(1) = ((f1+f2)+bs*(abs(s1(1))*s1(1)))
-
+  
+  
+  # --------------- Transportation Move ---------------- #
+  
+  
   for k = 1 : length(t)*(t+1)
     s2(k)= (((f1+f2)+bs*(abs(s1(k))*s1(k))))/m
     s1(k+1) = s1(k) + h*s2(k)
@@ -98,8 +130,16 @@ function Euler()
   endfor
   plot(s)
   
+  # ---------------- Rational Move ---------------------- #
   
-    
+  w(1) = 0
+  for k = 1: length(t)*(t)
+    w1(k)=(d/2*(f2-f1) - bu*abs(w(k))*w(k))
+    w(k+1) = w(k)+h*w1(k)
+  endfor
+  
+  plot(w1)
+  plot(w)  
   
 
   endfunction
