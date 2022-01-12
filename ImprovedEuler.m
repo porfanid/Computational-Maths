@@ -1,6 +1,7 @@
 function ImprovedEuler
   
   #----------- First -----------#
+
   #----------- Data 1----------#
   f1 = 4835/7000
   f2 = 4835/7000
@@ -27,9 +28,9 @@ function ImprovedEuler
   #-------- ImprovedEuler 1 --------#
   
   # s' #
-  for k = length(t)(t+1)
+  for k = length(t)*(t+1)
     s2(k) = (f1+f2 -bs*(abs(s1(k)*s1(k))))/m
-    s1(k+1)= s1(k)+h/2*(s2(k)+(f1+f2/m - abs((s1(k)+h*(s2(k))))*(s1(k)+h*(s2(k))))
+    s1(k+1)= s1(k)+h/2*(s2(k)+(f1+f2/m - (abs((s1(k)+h*(s2(k))))*(s1(k)+h*(s2(k))))/m)
   endfor
   
   # s #
@@ -39,15 +40,27 @@ function ImprovedEuler
   endfunction
   
   
-  #---------- SUBPLOT ----------#
+  #---------- SUBPLOT 1----------#
   figure(1)
   subplot(1,2,1)
+  title("Improved method s'")
+  ylabel("s'")
+  xlabel("t(sec)")
   plot(s1)
   subplot(1,2,2)
-  subplot(s)
-  
+  title("Improved Method Euler s")
+  ylabel("s'")
+  xlabel("t(sec)")
+  plot(s)
+
+
+
+
+
+
   # ----------- Second -----------#
-  
+
+
   #----------- Data 2----------#
   f1 = 4835/7000
   f2 = 4835/8000
@@ -87,15 +100,23 @@ function ImprovedEuler
   
   for k = length(t)*(t+1)
     s(k+1) = s(k)+h/2(s1(k)+s1(k+1))
-  endfunction
-  
-    
-  
-  #---------- SUBPLOT ----------#
+  endfor
+
+  #---------- SUBPLOT 2----------#
   figure(2)
   subplot(1,2,1)
+  title("Improved method euler s' ")
+  ylabel("s'")
+  xlabel("t(sec)")
   plot(s1)
+  
   subplot(1,2,2)
+  title("Improved Method euler s ")
+  ylabel("s")
+  xlabel("t(sec)")
   subplot(s)
+  
+endfunction
+
   
   
