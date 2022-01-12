@@ -86,5 +86,27 @@ endfor
 
 
 
+  # s'(n+1) = s'(n) + hs"(n)
+
+  for k = length(t)*t
+    s2(k)=((Kps*(Sdes-s(k))-Kds*s1(k) - bs*abs(s1(k))*s1(k)))/m  #s"
+    s1(k+1) = s1(k) + h/2*(s2(k)+((Kps*(Sdes-(s(k)+h*s1(k)))-Kds(s1(k)+h*s2(k))-bs*abs(s1(k)+h*s2(k))*(s1(k)+h*s2(k)))/m) #s'
+    s(k) = s(k) + h/2*(s1(k)+s1(k+1)) # s
+  endfor
+
+
+# ---------- Subplot ---------- #
+figure(1)  # s" # s'
+subplot(1,2,1)
+plot(s2)
+title(" s''= Kps(Sdes - s)-Kds(s')-bs|s'|s'  ")
+ylabel("s"")
+xlabel("t(sec)")
+
+figure(2)
+
+
+
+
 
 endfunction
