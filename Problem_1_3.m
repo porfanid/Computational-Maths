@@ -44,14 +44,41 @@ endfor
   w1 = zeros (1,length(t))
   w(1) = 0
   for k = 1: length(t)*(t)
-    w1(k)=(d/2*(f2-f1) - bu*abs(w(k))*w(k)) #w1
+    w1(k)=((d/2*(f2-f1) - bu*abs(w(k))*w(k)))/Iz #w1
     w(k+1) = w(k)+h*w1(k) #w
   endfor
 
   # --------------- subplot ---------------- #
+  figure(1)
+  subplot(1,2,1)
+  plot(s2)
+  title(" s''= Kps(Sdes-s)-Kds(s')-bs|s'|s'")
+  ylabel("s"")
+  xlabel("t(sec)")
+  subplot(2,1,2)
+  plot(s1)
+  title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+h*s"(k))-bs'abs(s1(k)+hs"(k))(s'(k)+hs"(k)))/m)")
+  ylabel("s'")
+  xlabel("t(sec)")
 
+  figure(2) #s
+  plot(s)
+  title("s(k+1) = s(k) + h/2*(s'(k)+s'(k+1))")
+  ylabel("s")
+  xlabel("t(sec)")
 
+  figure(3)
+  subplot(1,2,1)
+  title("w'=(d/2(f2-f1)-bu|w(k)|w(k))/Iz")
+  xlabel("t(sec)")
+  ylabel("w'")
+  plot(w1)
 
+  subplot(1,2,2)
+  title("w(k+1)=w(k)+hw'(k)")
+  xlabel("t(sec)")
+  ylabel("w")
+  plot(w)
 
 
 
@@ -75,9 +102,6 @@ endfor
   Sdes=AM/200 
   
 
-
-
-
   s1(1)=0
   #s2= (Kps*(Sdes-s)-Kds*s1 - bs*abs(s1)*s1)/9
   s = zeros(1,length(t))
@@ -91,22 +115,29 @@ endfor
   for k = length(t)*t
     s2(k)=((Kps*(Sdes-s(k))-Kds*s1(k) - bs*abs(s1(k))*s1(k)))/m  #s"
     s1(k+1) = s1(k) + h/2*(s2(k)+((Kps*(Sdes-(s(k)+h*s1(k)))-Kds(s1(k)+h*s2(k))-bs*abs(s1(k)+h*s2(k))*(s1(k)+h*s2(k)))/m) #s'
-    s(k) = s(k) + h/2*(s1(k)+s1(k+1)) # s
+    s(k+1) = s(k) + h/2*(s1(k)+s1(k+1)) # s
   endfor
 
 
 # ---------- Subplot ---------- #
-figure(1)  # s" # s'
-subplot(1,2,1)
+figure(4)  # s" # s'
+subplot(1,2,1) # s"
 plot(s2)
 title(" s''= Kps(Sdes - s)-Kds(s')-bs|s'|s'  ")
 ylabel("s"")
 xlabel("t(sec)")
 
-figure(2)
+subplot(2,1,2)
+plot(s1)
+title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+h*s"(k))-bs'abs(s1(k)+hs"(k))(s'(k)+hs"(k)))/m)")
+ylabel("s'")
+xlabel("t(sec)")
 
-
-
+figure(5) #s
+plot(s)
+title("s(k+1) = s(k) + h/2*(s'(k)+s'(k+1))")
+ylabel("s")
+xlabel("t(sec)")
 
 
 endfunction
