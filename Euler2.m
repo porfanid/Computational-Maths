@@ -51,27 +51,49 @@ function Euler()
     s2(k)= (((f1+f2)+bs*(abs(s1(k))*s1(k))))/m
     s1(k+1) = s1(k) + h*s2(k)
   endfor
-
+  #plot s" s'
   figure(1)
+  title(" Euler Method s' ")
   subplot(1,2,1)
+  ylabel("s"")
+  xlabel("t(sec)")
   plot(s2)
   subplot(1,2,2)
+  ylabel("s'")
+  xlabel("t(sec)")
   plot(s1)
   
-  figure(2)
+  
   for k = 1 : length(t)*(t)
     s(k+1) = s(k)+h*s1(k)
   endfor
+
+  #plot s
+  figure(2)
+  title("Euler Method s")
+  ylabel("s")
+  xlabel("t(sec)")
   plot(s)
   
   # ---------------- Rational Move ---------------------- #
   w(1) = 0
   for k = 1: length(t)*(t)
-    w1(k)=(d/2*(f2-f1) - bu*abs(w(k))*w(k))
+    w1(k)=((d/2*(f2-f1) - bu*abs(w(k))*w(k)))/Iz
     w(k+1) = w(k)+h*w1(k)
   endfor
   
+
+
+  #------ plot w and w' ------#
+  figure(3)
+  subplot(1,2,1)
+  title("Euler Method w")
+  ylabel("w'")
+  xlabel("t(sec)")
   plot(w1)
+  subplot(1,2,2)
+  ylabel("w")
+  xlabel("t(sec)")
   plot(w)  
   
   
@@ -118,7 +140,8 @@ function Euler()
     s1(k+1) = s1(k) + h*s2(k)
   endfor
 
-  figure(3)
+  #plot s" and s'
+  figure(4)
   subplot(1,2,1)
   plot(s2)
   subplot(1,2,2)
@@ -134,7 +157,7 @@ function Euler()
   
   w(1) = 0
   for k = 1: length(t)*(t)
-    w1(k)=(d/2*(f2-f1) - bu*abs(w(k))*w(k))
+    w1(k)=((d/2*(f2-f1) - bu*abs(w(k))*w(k)))/Iz
     w(k+1) = w(k)+h*w1(k)
   endfor
   
