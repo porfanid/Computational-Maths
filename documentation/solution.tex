@@ -61,8 +61,7 @@
 %------------------------------------------------------------------------------------------------
     \section{Πρόβλημα 1}
         \subsection{Nα βρεθούν οι τύποι για την επίλυση του $\Pi.A.T$ με την Mέθοδο του $Euler$ και την βελτιωμένη μέθοδο του $Euler$ με τις παρακάτω τιμές για τις εισόδους και τις αρχικές συνθήκες}
-        
-        
+        \subsection*{Μεταφορική κίνηση}
         \subsubsection*{$Euler$ $s'$}
         Έχουμε από τα δεδομένα ότι:
         \begin{equation}
@@ -90,8 +89,21 @@
             \end{tabular}
 
 
-
-
+            \subsection*{Στροφική κίνηση}
+            
+            \begin{equation}
+                \omega'=\frac{\frac{d}{2}(f_2-f_1)-b\theta\rvert\omega\lvert\omega}{I_z}=f(t,\omega)
+            \end{equation}
+            \subsubsection*{$Euler$}
+            \begin{tabular}{ll}
+                $t_{n+1}=t_0+nh$ & $\omega_{n+1} = \omega_0+h\omega'h$\\
+                $t_1 = t_0+1h$&$\omega_1 = \omega_0+h\omega'_0$\\
+                $t_2=t_0+2h$ & $\omega_2=\omega_1+h\omega'_1$\\
+                .&.\\
+                .&.\\
+                .&.\\
+                $t_{30.000}=t_0+29.999h$&$\omega_{30.000}=\omega_{29.999}+h\omega'_{29.999}$\\
+            \end{tabular}
 
         \subsubsection*{Bελτιωμένη μέθοδος $Euler$ $s'$}
 
@@ -123,6 +135,12 @@
             $t_n=t_0+nh$ & \\
         \end{tabular}
 
+
+        \subsection*{Στροφική κίνηση}
+
+        \begin{dmath}
+            \omega_{n+1}=\omega_n+\frac{h}{2}{[f(t, \omega)+f(t_n+h, \omega_n+f(t,\omega))]}=\omega_n+\frac{h}{2}{[\omega'_n+\frac{(\frac{d}{2}(f_2-f_1)-b\theta \lvert\omega_n+\omega'_n\rvert(\omega_n+\omega'_n))}{I_z}]}
+        \end{dmath}
 %------------------------------------------------------------------------------------------------
 % Excersise 1γ
 %------------------------------------------------------------------------------------------------
