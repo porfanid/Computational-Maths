@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1641931932 "/home/porfanid/Programming/Maths/documentation/solution.tex" "solution.pdf" "solution" 1641931933
+["pdflatex"] 1642079100 "/home/porfanid/Programming/Maths/documentation/solution.tex" "solution.pdf" "solution" 1642079101
   "/home/porfanid/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1641503893 2726849 e9e7162e05fd0513c875ef320e3e8200 ""
-  "/home/porfanid/Programming/Maths/documentation/solution.tex" 1641931931 10159 26d5ce377e2a75ce90a02eb729ce1003 ""
+  "/home/porfanid/Programming/Maths/documentation/solution.tex" 1642079098 10732 9138efa5d53ead2c58445dca4072a04f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rep-cmrm.enc" 1202520719 2299 a3b6c25d7e3d7e92b220164f555e02c3 ""
@@ -37,7 +37,6 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi5.pfb" 1611007856 38851 5cd1b45e169708de43d9d18b81822db0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi7.pfb" 1611007856 38009 7ec40e1b38e9a527b3b770f90f8279ae ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr10.pfb" 1611007856 106226 6dee4fd24207a52fc3883da20d15ef79 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr12.pfb" 1611007856 108179 2562383a658002bc242888dcb078f99b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr5.pfb" 1611007856 107866 986215b0b62c69eb2e52d92a1ebfefb3 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr7.pfb" 1611007856 106309 680f8a7872e0be2ca28b969985773548 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmsy10.pfb" 1611007856 33568 1229f51de832265c06b3cbc7c344e81f ""
@@ -105,6 +104,8 @@
   "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1620418576 6208 8867b2a8a4e434d5825c7c33855c990b ""
   "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1575499565 5766 13a9e8766c47f30327caf893ece86ac8 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty" 1618257904 58665 e757d1a5d2f651d761f187cea16ae3f3 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575674187 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty" 1252107870 7358 95ac619994bd30d405a74f3eca431c84 ""
@@ -112,10 +113,10 @@
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1627916025 40136 b05acc85e8425979e52682d98a2bcacf ""
   "/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1640848347 5213678 018619bc2d31e496fd0ccdeca28b679b ""
-  "solution.aux" 1641931933 2160 274191a5387b037bcb430d60a3cffb15 "pdflatex"
-  "solution.out" 1641931933 2696 40046bedb4971b33eb05dec9c25984d2 "pdflatex"
-  "solution.tex" 1641931931 10159 26d5ce377e2a75ce90a02eb729ce1003 ""
-  "solution.toc" 1641931933 1089 29ea9293bfc71c9f700b94f109548c88 "pdflatex"
+  "solution.aux" 1642079101 1990 96aabb82e0a6bbd36efbb2a02c22c940 "pdflatex"
+  "solution.out" 1642079101 1473 0bde715e6f73bada5849bdcf7e76fbaf "pdflatex"
+  "solution.tex" 1642079098 10732 9138efa5d53ead2c58445dca4072a04f ""
+  "solution.toc" 1642079101 805 974b0313bd01b7fa0576ddcb656c3dc8 "pdflatex"
   (generated)
   "solution.aux"
   "solution.log"
