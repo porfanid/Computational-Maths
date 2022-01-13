@@ -101,7 +101,7 @@ function Euler()
   # ----------- SECOND ------------ #
   
     
-  #---------------- Data ----------------#
+  #---------------- Data 2----------------#
   f1 = 4835/7000
   f2 = 4835/8000
   m = 9
@@ -140,17 +140,24 @@ function Euler()
     s1(k+1) = s1(k) + h*s2(k)
   endfor
 
-  #plot s" and s'
+  # plot s" and s'
   figure(4)
   subplot(1,2,1)
+  title("Euler method s' ")
+  ylabel("s"")
+  xlabel("t(sec)")
   plot(s2)
   subplot(1,2,2)
+  ylabel("s'")
+  xlabel("t(sec)")
   plot(s1)
   
-  figure(4)
+
   for k = 1 : length(t)*(t+1)
     s(k+1) = s(k)+h*s1(k)
   endfor
+  figure(5)
+  title("Euler Method s")
   plot(s)
   
   # ---------------- Rational Move ---------------------- #
@@ -160,9 +167,18 @@ function Euler()
     w1(k)=((d/2*(f2-f1) - bu*abs(w(k))*w(k)))/Iz
     w(k+1) = w(k)+h*w1(k)
   endfor
-  
+  # plot w1 and w #
+
+  figure(6)
+
+  subplot(1,2,1)
+  title("Euler Method w")
   plot(w1)
+  ylabel("w'")
+  xlabel("t(sec)")
+
   plot(w)  
-  
+  ylabel("w")
+  xlabel("t(sec)")
 
   endfunction
