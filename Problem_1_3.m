@@ -1,6 +1,5 @@
 function Problem_1_3 ()
 
-
 # -------------- Data ------------ #
 
   f1 = 4835/7000
@@ -57,7 +56,7 @@ endfor
   xlabel("t(sec)")
   subplot(2,1,2)
   plot(s1)
-  title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+h*s"(k))-bs'abs(s1(k)+hs"(k))(s'(k)+hs"(k)))/m)")
+  title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+hs'(k)))-Kds(s'(k)+h*s"(k))-bs|s'(k)+hs"(k)|(s'(k)+hs"(k)))/m)")
   ylabel("s'")
   xlabel("t(sec)")
 
@@ -129,7 +128,7 @@ xlabel("t(sec)")
 
 subplot(2,1,2)
 plot(s1)
-title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+h*s"(k))-bs'abs(s1(k)+hs"(k))(s'(k)+hs"(k)))/m)")
+title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+hs"(k))-bs|s'(k)+hs"(k)|(s'(k)+hs"(k)))/m)")
 ylabel("s'")
 xlabel("t(sec)")
 

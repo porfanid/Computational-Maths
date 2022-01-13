@@ -13,6 +13,8 @@ function ImprovedEuler
   AM = 4835
   bs = 3 - (4835/5000)
   bu = 5 - (4835/5000)
+
+  
   
   t = 0:0.1:30
   display(length(t))
@@ -25,8 +27,9 @@ function ImprovedEuler
   s1(1) = 0 
   s(1)=AM/4835
   
-  #-------- ImprovedEuler 1 --------#
+  # -------- ImprovedEuler 1 -------- #
   
+  # ---------- Trasportation Move ---------- #
   # s' #
   for k = length(t)*(t+1)
     s2(k) = (f1+f2 -bs*(abs(s1(k)*s1(k))))/m
@@ -37,16 +40,22 @@ function ImprovedEuler
   
   for k = length(t)*(t+1)
     s(k+1) = s(k)+h/2(s1(k)+s1(k+1))
-  endfunction
+  endfor
   
+  # --------- Rational Move 1 --------- #
+
+  # w' and w #
+
   
   #---------- SUBPLOT 1----------#
+
   figure(1)
   subplot(1,2,1)
   title("Improved method s'")
   ylabel("s'")
   xlabel("t(sec)")
   plot(s1)
+
   subplot(1,2,2)
   title("Improved Method Euler s")
   ylabel("s'")
@@ -56,9 +65,7 @@ function ImprovedEuler
 
 
 
-
-
-  # ----------- Second -----------#
+  # ----------- Second Input Values (f1+f2) -------------#
 
 
   #----------- Data 2----------#
@@ -101,6 +108,13 @@ function ImprovedEuler
   for k = length(t)*(t+1)
     s(k+1) = s(k)+h/2(s1(k)+s1(k+1))
   endfor
+
+
+
+  # ----------- Rational Move 2 ------------- #
+
+  # w' and w #
+
 
   #---------- SUBPLOT 2----------#
   figure(2)
