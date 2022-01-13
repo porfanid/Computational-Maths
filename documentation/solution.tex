@@ -127,19 +127,14 @@
         % Changes required
       %--------------------------------------------------------------------
         \subsubsection*{Bελτιωμένη μέθοδος $Euler$ $s$}
-        \begin{tabular}{ll}
-            \multicolumn{2}{c}{Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$: }\\
-            $t_n=t_0+nh$ & $s_{n+1}=s_n+hf(t,s)n$\\
-            το οποίο σημαίνει ότι: & \\
-            $t_1=t_0+1h$ & $s_{n+1}=s_n+hs'_n$\\
-            $t_2=t_0+2h$ & $s_1=s_0+hs'_0$\\
-            . & \\
-            . & \\
-            . & \\
-            $t_n=t_0+nh$ & \\
-        \end{tabular}
-
-
+        \[s''_n=\frac{k_{ps}(s_{des}-s)-K_{ds}s'-b_s\lvert s'\rvert s'}{m}=f(t,s,s')\]
+        \[s'_{n+1}=s'_n+\frac{h}{2}[f(t,s,s')+f(t_n+h,s_n+k'_n, s'_n+f(t,s,s'))]\]
+        \[s'_{n+1}=s'_n+\frac{h}{2}\frac{k_{ps}(s_{des}-(s_n+hs'_n))-k_{ds}(s'_n+hs'_n)-b_s\lvert s'_n+hs'_n \rvert(s'_n+hs'_ns'_n+hs'_n)}{m}\]
+        \[
+        \begin{Bmatrix}
+            s'_n+\frac{h}{2}[s''_n+\frac{k_{ps}(s_{des}-(s_n+hs'_n))-k_{ds}(s'n+hs'_n)-b_s\lvert s'_n+hs'_n\rvert(s'_n+hs'_n)}{m}]\\
+        \end{Bmatrix} 
+        \]
         \subsection*{Στροφική κίνηση}
 
         \begin{dmath}
@@ -173,6 +168,7 @@
 
         \[(\ref{1}) \xRightarrow{(\ref{2})}s''=\frac{k_{ps}(s_{des}-s)-K_{ds}s'-b_s\rvert s'\lvert s'}{m}=f(t,s,s')\]
 
+        
         \begin{tabular}{l|l}
             \multicolumn{2}{c}{Εφαρμόζουμε $Euler$ για την $s'$: }\\
             $t_n=t_0+nh$ & $s'_{n+1}=s'_n+hs''_n$\\
@@ -183,8 +179,7 @@
             . & \\
             . & \\
             $t_n=t_0+nh$ & \\
-        \end{tabular}
-
+        \end{tabular} 
         %--------------------------------------------
         %  Arrows to point between functions
         %--------------------------------------------
@@ -194,7 +189,7 @@
             $t_n=t_0+nh$ & $s_{n+1}=s_n+hs'_n$\\
             το οποίο σημαίνει ότι: & \\
             $t_1=t_0+1h$ & $s_1=s_0+hs'_0$\\
-            $t_2=t_0+2h$ & $s_2=s_1+hs'_1$(Dιότι έχει άγνωστη $s_1$)\\
+            $t_2=t_0+2h$ & $s_2=s_1+hs'_1$\\
             .            &\\
             . & \\
             . & \\
