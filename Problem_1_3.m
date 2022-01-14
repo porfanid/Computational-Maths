@@ -29,7 +29,7 @@ function Problem_1_3 ()
 
 # --------------- Transportation Move ---------------- #
 
-for k = length(t)*(t+1)
+for k = length(t)*(t)
   s2(k) = ((Kps*(Sdes-s(k))-Kds*s1(k) - bs*abs(s1(k))*s1(k)))/m  # s"
   s1(k+1) = s1(k)+h*s2(k) # s'
   s(k+1)  = s(k)+h*s1(k)  # s
@@ -52,11 +52,11 @@ endfor
   subplot(1,2,1)
   plot(s2)
   title(" s''= Kps(Sdes-s)-Kds(s')-bs|s'|s'")
-  ylabel("s"")
+  ylabel("s\"")
   xlabel("t(sec)")
   subplot(2,1,2)
   plot(s1)
-  title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+hs'(k)))-Kds(s'(k)+h*s"(k))-bs|s'(k)+hs"(k)|(s'(k)+hs"(k)))/m)")
+  title("s'(k+1) = s'(k) + h/2(s\"(k)+((Kps(Sdes-(s(k)+hs'(k)))-Kds(s'(k)+h*s\"(k))-bs|s'(k)+hs\"(k)|(s'(k)+hs\"(k)))/m)")
   ylabel("s'")
   xlabel("t(sec)")
 
@@ -123,12 +123,12 @@ figure(4)  # s" # s'
 subplot(1,2,1) # s"
 plot(s2)
 title(" s''= Kps(Sdes - s)-Kds(s')-bs|s'|s'  ")
-ylabel("s"")
+ylabel("s\"")
 xlabel("t(sec)")
 
 subplot(2,1,2)
 plot(s1)
-title("s'(k+1) = s'(k) + h/2(s"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+hs"(k))-bs|s'(k)+hs"(k)|(s'(k)+hs"(k)))/m)")
+title("s'(k+1) = s'(k) + h/2(s\"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+hs\"(k))-bs|s'(k)+hs\"(k)|(s'(k)+hs\"(k)))/m)")
 ylabel("s'")
 xlabel("t(sec)")
 

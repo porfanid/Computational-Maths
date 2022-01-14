@@ -52,16 +52,19 @@ function Euler()
     s1(k+1) = s1(k) + h*s2(k)
   endfor
   #plot s" s'
+  
   figure(1)
+  plot(s2)
   title(" Euler Method s' ")
   subplot(1,2,1)
-  ylabel("s"")
+  ylabel("s\"")
   xlabel("t(sec)")
-  plot(s2)
+ 
   subplot(1,2,2)
+  plot(s1)
   ylabel("s'")
   xlabel("t(sec)")
-  plot(s1)
+  
   
   
   for k = 1 : length(t)*(t)
@@ -69,11 +72,12 @@ function Euler()
   endfor
 
   #plot s
+  
   figure(2)
+  plot(s)
   title("Euler Method s")
   ylabel("s")
   xlabel("t(sec)")
-  plot(s)
   
   # ---------------- Rational Move ---------------------- #
   w(1) = 0
@@ -87,14 +91,16 @@ function Euler()
   #------ plot w and w' ------#
   figure(3)
   subplot(1,2,1)
+  plot(w1)
   title("Euler Method w")
   ylabel("w'")
   xlabel("t(sec)")
-  plot(w1)
+  
   subplot(1,2,2)
+  plot(w)
   ylabel("w")
   xlabel("t(sec)")
-  plot(w)  
+    
   
   
   
@@ -143,22 +149,26 @@ function Euler()
   # plot s" and s'
   figure(4)
   subplot(1,2,1)
-  title("Euler method s' ")
-  ylabel("s"")
-  xlabel("t(sec)")
   plot(s2)
+  ylabel("s\"")
+  xlabel("t(sec)")
+  
   subplot(1,2,2)
+  plot(s1)
+  title("Euler method s' ")
   ylabel("s'")
   xlabel("t(sec)")
   plot(s1)
   
 
-  for k = 1 : length(t)*(t+1)
+  for k = 1 : length(t)*(t)
     s(k+1) = s(k)+h*s1(k)
   endfor
   figure(5)
-  title("Euler Method s")
   plot(s)
+  title("Euler Method s")
+  ylabel("s")
+  xlabel("t(sec)")
   
   # ---------------- Rational Move ---------------------- #
   
@@ -172,12 +182,13 @@ function Euler()
   figure(6)
 
   subplot(1,2,1)
-  title("Euler Method w")
+  
   plot(w1)
   ylabel("w'")
   xlabel("t(sec)")
 
-  plot(w)  
+  plot(w)
+  title("Euler Method w")  
   ylabel("w")
   xlabel("t(sec)")
 

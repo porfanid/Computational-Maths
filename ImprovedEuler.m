@@ -15,7 +15,6 @@ function ImprovedEuler
   bu = 5 - (4835/5000)
 
   
-  
   t = 0:0.1:30
   display(length(t))
   s1=0
@@ -38,29 +37,47 @@ function ImprovedEuler
   
   # s #
   
-  for k = length(t)*(t+1)
+  for k = length(t)*(t)
     s(k+1) = s(k)+h/2(s1(k)+s1(k+1))
   endfor
   
   # --------- Rational Move 1 --------- #
-
+  w = zeros(1,length(t))
+  w1 = zeros(1,length(t))
   # w' and w #
-
+  
+  for k = length(t)*(t)
+    w1(k) = (d/2*(f2-f1)-bu*abs(w(k))*w(k))/Iz
+    w(k) = w(k)+h/2*(w1(k)+(d/2*(f2-f1)-bu*abs(w(k)+w1(k))*(w(k)+w1(k)))/Iz)
+  endfor
   
   #---------- SUBPLOT 1----------#
 
   figure(1)
   subplot(1,2,1)
+  plot(s1)
   title("Improved method s'")
   ylabel("s'")
   xlabel("t(sec)")
-  plot(s1)
 
   subplot(1,2,2)
+  plot(s)
   title("Improved Method Euler s")
   ylabel("s'")
   xlabel("t(sec)")
-  plot(s)
+  
+  
+  figure(2)
+  subplot(1,2,1)
+  plot(w1)
+  ylabel("w'")
+  xlabel("t(sec)")
+  
+  subplot(1,2,2)
+  plot(w)
+  ylabel("w")
+  xlabel("t(sec)")
+    
 
 
 
@@ -114,21 +131,37 @@ function ImprovedEuler
   # ----------- Rational Move 2 ------------- #
 
   # w' and w #
-
-
+  
+  for k = length(t)*(t)
+    w1(k) = (d/2*(f2-f1)-bu*abs(w(k))*w(k))/Iz
+    w(k) = w(k)+h/2*(w1(k)+(d/2*(f2-f1)-bu*abs(w(k)+w1(k))*(w(k)+w1(k)))/Iz)
+  endfor  
+  
   #---------- SUBPLOT 2----------#
-  figure(2)
+  figure(3)
   subplot(1,2,1)
+  plot(s1)
   title("Improved method euler s' ")
   ylabel("s'")
   xlabel("t(sec)")
-  plot(s1)
+  
   
   subplot(1,2,2)
+  plot(s)
   title("Improved Method euler s ")
   ylabel("s")
   xlabel("t(sec)")
-  subplot(s)
+  
+  figure(3)
+  subplot(1,2,1)
+  plot(w1)
+  ylabel("w'")
+  xlabel("t(sec)")
+  
+  subplot(1,2,2)
+  plot(w)
+  ylabel("w")
+  xlabel("t(sec)")
   
 endfunction
 
