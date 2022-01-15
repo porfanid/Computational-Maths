@@ -1,3 +1,7 @@
+# Pavlos Orfanidis: 4134
+# Giorgos Hatziligos: 4835
+# Spyros Kontakis: 4702
+
 function problem_2_b()
   #{
   # I will insert semicolons(;) in every line in matlab to avoid printing unwanted text to the screen
@@ -18,14 +22,14 @@ function problem_2_b()
   max_root_index = (length(k1)-1)
   for n=0.1:max_root_index
     find_root+=1;
-    u1=roots([(m/kps), (n-bs)/kps, 1]);
+    u1=roots([(m/kps), (n+bs)/kps, 1]);
     solution1(find_root)=u1(1);
     solution2(find_root)=u1(2);
   endfor
   
   for n=0.1:max_root_index
     find_root+=1
-    u2=roots([(find_root), (kds-bs)/(find_root), 1])
+    u2=roots([(find_root), (kds+bs)/(find_root), 1])
     solution3=u2(1);
     solution4=u2(2);
   endfor
