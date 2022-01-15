@@ -1,4 +1,8 @@
-function problem2d()
+# Pavlos Orfanidis: 4134
+# Giorgos Hatziligos: 4835
+# Spyros Kontakis: 4702
+
+function problem_2_d()
   
   
   #Data#

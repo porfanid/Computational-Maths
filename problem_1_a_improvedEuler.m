@@ -1,4 +1,8 @@
-function ImprovedEuler
+# Pavlos Orfanidis: 4134
+# Giorgos Hatziligos: 4835
+# Spyros Kontakis: 4702
+
+function problem_1_a_improvedEuler()
   
   #----------- First -----------#
 

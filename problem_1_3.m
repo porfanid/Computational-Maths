@@ -1,4 +1,8 @@
-function Problem_1_3 ()
+# Pavlos Orfanidis: 4134
+# Giorgos Hatziligos: 4835
+# Spyros Kontakis: 4702
+
+function problem_1_3 ()
 
 # -------------- Data ------------ #
   AM=4835;
