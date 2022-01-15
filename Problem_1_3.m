@@ -66,18 +66,6 @@ endfor
   ylabel("s");
   xlabel("t(sec)");
 
-  figure(3);
-  subplot(1,2,1);
-  title("w'=(d/2(f2-f1)-bu|w(k)|w(k))/Iz");
-  xlabel("t(sec)");
-  ylabel("w'");
-  plot(w1);
-
-  subplot(1,2,2);
-  plot(t,w);
-  title("w(k+1)=w(k)+hw'(k)");
-  xlabel("t(sec)");
-  ylabel("w");
 
 
 
@@ -120,7 +108,7 @@ endfor
 
 
 # ---------- Subplot ---------- #
-figure(4)  # s" # s'
+figure(3)  # s" # s'
 subplot(1,2,1) # s"
 plot(s2)
 title(" s''= Kps(Sdes - s)-Kds(s')-bs|s'|s'  ")
@@ -133,7 +121,7 @@ title("s'(k+1) = s'(k) + h/2(s\"(k)+((Kps(Sdes-(s(k)+h*s'(k)))-Kds(s'(k)+hs\"(k)
 ylabel("s'")
 xlabel("t(sec)")
 
-figure(5) #s
+figure(4) #s
 plot(t,s)
 title("s(k+1) = s(k) + h/2*(s'(k)+s'(k+1))")
 ylabel("s")
