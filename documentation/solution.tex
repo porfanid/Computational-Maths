@@ -135,6 +135,9 @@
             s'_n+\frac{h}{2}[s''_n+\frac{k_{ps}(s_{des}-(s_n+hs'_n))-k_{ds}(s'n+hs'_n)-b_s\lvert s'_n+hs'_n\rvert(s'_n+hs'_n)}{m}]\\
         \end{Bmatrix} 
         \]
+        \[s_{n+1}=s_n+\frac{h}{2}[s'_n+s'_{n+1}]\]
+        \[s_1=s_0+\frac{h}{2}[s'_0+s'_1]\]
+        \[s_2=s_1+\frac{h}{2}[s'_1+s'_2]\]
         \subsection*{Στροφική κίνηση}
 
         \begin{dmath}
@@ -237,4 +240,63 @@
         Οπότε,
 
         \[s'_n  + (h/2)(f'(t_n, s_n) + \frac{(f_1 + f_2) - b_s (s'_n + h  \lvert  (f_1 + f_2) - b_s\rvert s'_n |s'_n}{m}  \lvert  \frac{S'_n + h (f_1 + f_2)  - b_s |s'_n|s'_n}{m}  \rvert  m) \]
+    \section{Pr'oblhma 2}
+        \subsection{Dedom'ena}
+        \begin{equation}
+            ms''=(f_1+f_2)-b_ss'
+            \label{prob2:5}
+        \end{equation}
+        \begin{equation}
+            f_1+f_2=k_{ps}(s_{des}-s)-k_{ds}(s')
+            \label{prob2:6}
+        \end{equation}
+        \subsection{a}
+        \[H(s)=\frac{L(output)}{L(input)}\rvert _{A\Sigma=0}\]
+        \[a_0y^{(n)}+a_1y^{(n-1)}+\dots a_ny\]
+        \[H(s)=\frac{Y(s)}{U(s)}=\frac{1}{a_0s^n+a_1s^{n-1}+\dots+a_n}=\frac{p(s)}{q(s)}\]
+        M'ejodos $Laplase$
+        \[L(f(t))=f(s)=\int_0^{+\infty}e^{-ts}dt\]
+        $f(t)=0$ gia $t<0$
+        \[(\ref{prob2:5}) \xRightarrow{(\ref{prob2:6})}K_{ps}(s_{des}-s)-k_{ds}s'=b_s=ms''\]
+        \[\Leftrightarrow ms^2X(s)=k_{ps}S_{des}-X(s)k_{ps}-k_{ds}(SX(S))-b_s(sX(s))\]
+        \[\Leftrightarrow X(s)=\frac{K_{ps}S_{des}}{ms^2+s(K_{ds}+b_s)+K_{ps}}\]
+        \hfill M'ono p'oloi
+        \[\frac{X(s)}{S_{des}}=\frac{1}{\frac{ms^2}{k_{ps}}+\frac{s(k_{ds}+b_s)}{k_{ps}}+1}\]
+        \[H(s)=\frac{X(s)}{U(s)}=\frac{1}{\frac{ms^2}{k_{ps}}+\frac{s(k_{ds}+b_s)}{k_{ps}}+1}\]\hfill Sun'arthsh metafor'as
+%-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+        \subsection{g}
+        \[ms''=k_{ps}(s_{des}-s)-k_{ds}-s'-b_ss'\]
+        \[s''+\frac{s'(k_{ds}-b_s)}{m}+\frac{k_{ps}s}{m}-\frac{k_{ps}s_{des}}{m}=0\]
+        \[r^2+\frac{r(k_{ds}+b_s)}{m}+\frac{k_{ps}s}{m}=0\]
+        \[\Delta=(\frac{k_{ds}+b_s}{m})^2-4\frac{k_{ps}}{m}\]
+        
+        \[r_{1,2}=\frac{-\frac{k_{ds}+b_s}{m}\pm\sqrt{\Delta}}{2}\]
+        'Ara 'eqoume 2 l'useis, tis $r1$ kai $r2$:
+        \[r_1=\frac{-\frac{k_{ds}+b_s}{m}+\sqrt{\Delta}}{2}\]
+        \[r_2=\frac{-\frac{k_{ds}+b_s}{m}-\sqrt{\Delta}}{2}\]
+        \subsubsection{Merik'h L'ush}
+        \[c_1e^{r_1t}+c_2e^{r_2t}=-\frac{k_{ps}s_{des}}{m}\]
+        \[s''+s'\frac{k_{ds}+b_s}{m}+\frac{k_{ps}s}{m}-\frac{k_{ps}s_{des}}{m}=0\xRightarrow[s'(0)=0]{s''(0)=0}\]
+        \[s''(0)+s'(0)\frac{k_{des}+b_s}{m}+\frac{K_{ps}s(0)}{m}-\frac{k_{ps}s_{des}}{m}=0\Rightarrow\]
+        \[s(0)=s_{des}\]
+        \[s(t)=s_{des}\]
+        $s(t)=s_{des}=A$ 'Ara polu'wnumo $0^{o\upsilon}$ bajmou
+        \subsubsection{Genik'h L'ush}
+        'Ara,
+        \[s=s_{des}+c_1e^{r_1t}+c_2e^{r_2t}\]
+        \[s'=c_1r_1e^{r_1t}+c_2r_2e^{r_2t}\]
+        \begin{equation}
+        s(0)=0\Rightarrow c_1+c_2+s_{des}=0\Rightarrow c_1+c_2=-s_{des}
+        \label{eq:s1}
+        \end{equation}
+        \begin{equation}
+            s'(0)=0\Rightarrow c_1r_1e^0+c_2r_2e^0=0\Rightarrow_1r_1+c_2r_2=0
+            \label{eq:s2}
+        \end{equation}
+        \[(\ref{eq:s2})\xRightarrow{(\ref{eq:s1})}(-c_2-s_{des})r_1+c_2r_2=0\Rightarrow_2=\frac{s_{des}r_1}{-r_1+r_2}\]
+        \[(\ref{eq:s1})\xRightarrow{(\ref{eq:s2})}c_1=-s_{des}r_1(r_2-r_1)-s_{des}=-s_{des}(\frac{r_1}{r_2-r_1}+1)\]
+        \subsubsection{Analutik'h L'ush}
+        \[s=s_{des}+(-s_{des}(\frac{r_1}{r_2-r_1}+1))e^(r_1t)+\frac{s_{des}r_1e^{r_2t}}{-r_1+r_2}\]
+        \[\]
 \end{document}
