@@ -7,3 +7,10 @@
 \contentsline {subsection}{\numberline {1.4}Πρόβλημα 1γ: Βελτιωμένη Μέθοδος Euler}{4}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}Δεδομένα}{4}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Μεταφορική Κίνηση}{4}{subsubsection.1.4.2}%
+\contentsline {section}{\numberline {2}Pr'oblhma 2}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Dedom'ena}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}a}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}g}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Merik'h L'ush}{6}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Genik'h L'ush}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Analutik'h L'ush}{6}{subsubsection.2.3.3}%
