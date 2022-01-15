@@ -114,7 +114,7 @@ endfor
   for k = 1:30000
     s2(k)=(Kps*(Sdes-s(k))-Kds*s1(k) - bs*abs(s1(k))*s1(k))/m;  #s"
     #s1(k+1) = s1(k) + h/2*((s2(k)+((Kps*(Sdes-(s(k)+h*s1(k)))-Kds(s1(k)+h*s2(k))-bs*abs(s1(k)+h*s2(k))*(s1(k)+h*s2(k)))/m); #s'
-    s1(k+1) = s1(k) + h/2*(s2(k)+(Kps*(Sdes-(s(k)+h*s1(k))-Kds*(s1(k)+h*s2(k))-bs*(abs(s1(k)+h*(s2(k))))*(s1(k)+h*s2(k))))/m);
+    s1(k+1) = s1(k) + h/2*(s2(k)+(Kps*(Sdes-(s(k)+h*s1(k)))-Kds*(s1(k)+h*s2(k))-bs*(abs(s1(k)+h*(s2(k))))*(s1(k)+h*s2(k)))/m);
     s(k+1) = s(k) + h/2*(s1(k)+s1(k+1)); # s
   endfor
 
