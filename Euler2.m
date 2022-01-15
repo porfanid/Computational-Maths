@@ -166,8 +166,9 @@ function Euler2()
   xlabel("t(sec)");
   
   subplot(1,2,2);
-  title("Euler method s' ");
+
   plot(t,s1);
+  title("Euler method s' ");
   ylabel("s'");
   xlabel("t(sec)");
   
