@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  15 JAN 2022 20:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  15 JAN 2022 21:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -728,30 +728,30 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip67
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
  (./solution.aux)
 \openout1 = `solution.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
 File: puenc-greek.def 2020/10/18 2.0 Greek LICRs for PDF strings
  (/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
@@ -781,7 +781,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -791,9 +791,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
  (./solution.out) (./solution.out)
 \@outlinefile=\write3
 \openout3 = `solution.out'.
@@ -1570,58 +1570,152 @@ pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/upd
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fontmap entry for `pzcmi8g' already exists, duplicates ignored
 }]
-Overfull \hbox (45.28618pt too wide) in paragraph at lines 124--135
+Overfull \hbox (45.28618pt too wide) in paragraph at lines 126--137
 [] 
  []
 
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 164.
+(hyperref)                removing `math shift' on input line 166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 174.
+(hyperref)                removing `math shift' on input line 176.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 174.
+(hyperref)                removing `math shift' on input line 176.
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 222.
 
 
-Overfull \hbox (86.54613pt too wide) in paragraph at lines 234--243
+Overfull \hbox (86.54613pt too wide) in paragraph at lines 236--245
 [][] 
  []
 
-[4] [5] [6] [7] (./solution.aux)
+[4]
+<../Euler//Euler1.png, id=150, 2864.7025pt x 1402.23875pt>
+File: ../Euler//Euler1.png Graphic file (type png)
+<use ../Euler//Euler1.png>
+Package pdftex.def Info: ../Euler//Euler1.png  used on input line 264.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../Euler//Euler2.png, id=151, 2864.7025pt x 1402.23875pt>
+File: ../Euler//Euler2.png Graphic file (type png)
+<use ../Euler//Euler2.png>
+Package pdftex.def Info: ../Euler//Euler2.png  used on input line 265.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../Euler//Euler3.png, id=152, 2864.7025pt x 1402.23875pt>
+File: ../Euler//Euler3.png Graphic file (type png)
+<use ../Euler//Euler3.png>
+Package pdftex.def Info: ../Euler//Euler3.png  used on input line 266.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../Euler//Euler4.png, id=153, 835.12pt x 626.34pt>
+File: ../Euler//Euler4.png Graphic file (type png)
+<use ../Euler//Euler4.png>
+Package pdftex.def Info: ../Euler//Euler4.png  used on input line 267.
+(pdftex.def)             Requested size: 597.50787pt x 448.15463pt.
+<../Euler//Euler5.png, id=154, 875.27pt x 656.4525pt>
+File: ../Euler//Euler5.png Graphic file (type png)
+<use ../Euler//Euler5.png>
+Package pdftex.def Info: ../Euler//Euler5.png  used on input line 268.
+(pdftex.def)             Requested size: 597.50787pt x 448.1347pt.
+<../Euler//Euler6.png, id=155, 875.27pt x 656.4525pt>
+File: ../Euler//Euler6.png Graphic file (type png)
+<use ../Euler//Euler6.png>
+Package pdftex.def Info: ../Euler//Euler6.png  used on input line 269.
+(pdftex.def)             Requested size: 597.50787pt x 448.1347pt.
+ [5] [6]
+Overfull \vbox (26.34802pt too high) has occurred while \output is active []
+
+ [7 <../Euler//Euler1.png (PNG copy)> <../Euler//Euler2.png (PNG copy)>] [8 <../Euler//Euler3.png (PNG copy)>] [9 <../Euler//Euler4.png (PNG copy)>] [10 <../Euler//Euler5.png (PNG copy)>]
+<../ImprovedEuler//ImprovedEuler1.png, id=183, 835.12pt x 626.34pt>
+File: ../ImprovedEuler//ImprovedEuler1.png Graphic file (type png)
+<use ../ImprovedEuler//ImprovedEuler1.png>
+Package pdftex.def Info: ../ImprovedEuler//ImprovedEuler1.png  used on input line 271.
+(pdftex.def)             Requested size: 597.50787pt x 448.15463pt.
+ [11 <../Euler//Euler6.png (PNG copy)>]
+<../ImprovedEuler//ImprovedEuler2.png, id=188, 835.12pt x 626.34pt>
+File: ../ImprovedEuler//ImprovedEuler2.png Graphic file (type png)
+<use ../ImprovedEuler//ImprovedEuler2.png>
+Package pdftex.def Info: ../ImprovedEuler//ImprovedEuler2.png  used on input line 273.
+(pdftex.def)             Requested size: 597.50787pt x 448.15463pt.
+<../ImprovedEuler//ImprovedEuler3.png, id=189, 835.12pt x 626.34pt>
+File: ../ImprovedEuler//ImprovedEuler3.png Graphic file (type png)
+<use ../ImprovedEuler//ImprovedEuler3.png>
+Package pdftex.def Info: ../ImprovedEuler//ImprovedEuler3.png  used on input line 274.
+(pdftex.def)             Requested size: 597.50787pt x 448.15463pt.
+<../ImprovedEuler//ImprovedEuler4.png, id=190, 835.12pt x 626.34pt>
+File: ../ImprovedEuler//ImprovedEuler4.png Graphic file (type png)
+<use ../ImprovedEuler//ImprovedEuler4.png>
+Package pdftex.def Info: ../ImprovedEuler//ImprovedEuler4.png  used on input line 275.
+(pdftex.def)             Requested size: 597.50787pt x 448.15463pt.
+ [12 <../ImprovedEuler//ImprovedEuler1.png (PNG copy)>] [13 <../ImprovedEuler//ImprovedEuler2.png (PNG copy)>] [14 <../ImprovedEuler//ImprovedEuler3.png (PNG copy)>]
+<../Problem_1_3//problem_1_3_1.png, id=205, 2864.7025pt x 1402.23875pt>
+File: ../Problem_1_3//problem_1_3_1.png Graphic file (type png)
+<use ../Problem_1_3//problem_1_3_1.png>
+Package pdftex.def Info: ../Problem_1_3//problem_1_3_1.png  used on input line 278.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../Problem_1_3//problem_1_3_2.png, id=206, 2864.7025pt x 1402.23875pt>
+File: ../Problem_1_3//problem_1_3_2.png Graphic file (type png)
+<use ../Problem_1_3//problem_1_3_2.png>
+Package pdftex.def Info: ../Problem_1_3//problem_1_3_2.png  used on input line 279.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../Problem_1_3//problem_1_3_3.png, id=207, 2864.7025pt x 1402.23875pt>
+File: ../Problem_1_3//problem_1_3_3.png Graphic file (type png)
+<use ../Problem_1_3//problem_1_3_3.png>
+Package pdftex.def Info: ../Problem_1_3//problem_1_3_3.png  used on input line 280.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../Problem_1_3//problem_1_3_4.png, id=208, 875.27pt x 656.4525pt>
+File: ../Problem_1_3//problem_1_3_4.png Graphic file (type png)
+<use ../Problem_1_3//problem_1_3_4.png>
+Package pdftex.def Info: ../Problem_1_3//problem_1_3_4.png  used on input line 281.
+(pdftex.def)             Requested size: 597.50787pt x 448.1347pt.
+ [15 <../ImprovedEuler//ImprovedEuler4.png (PNG copy)>]
+Overfull \vbox (7.89127pt too high) has occurred while \output is active []
+
+ [16 <../Problem_1_3//problem_1_3_1.png (PNG copy)> <../Problem_1_3//problem_1_3_2.png (PNG copy)>] [17 <../Problem_1_3//problem_1_3_3.png (PNG copy)>] [18 <../Problem_1_3//problem_1_3_4.png (PNG copy)>] [19]
+<../problem2d//problem2d_1.png, id=243, 2864.7025pt x 1402.23875pt>
+File: ../problem2d//problem2d_1.png Graphic file (type png)
+<use ../problem2d//problem2d_1.png>
+Package pdftex.def Info: ../problem2d//problem2d_1.png  used on input line 352.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+<../problem2d//problem2d_2.png, id=244, 2864.7025pt x 1402.23875pt>
+File: ../problem2d//problem2d_2.png Graphic file (type png)
+<use ../problem2d//problem2d_2.png>
+Package pdftex.def Info: ../problem2d//problem2d_2.png  used on input line 353.
+(pdftex.def)             Requested size: 597.50787pt x 292.46756pt.
+ [20] [21]
+Overfull \vbox (29.18115pt too high) has occurred while \output is active []
+
+ [22 <../problem2d//problem2d_1.png (PNG copy)> <../problem2d//problem2d_2.png (PNG copy)>] (./solution.aux)
 Package rerunfilecheck Info: File `solution.out' has not changed.
-(rerunfilecheck)             Checksum: 7A4314A2B838579A29E122FE1AC8A558;2397.
+(rerunfilecheck)             Checksum: 5248CC547B0C3B436DCB8F3B4CA828EF;2576.
  ) 
 Here is how much of TeX's memory you used:
- 12394 strings out of 478862
- 183851 string characters out of 5858946
- 508418 words of memory out of 6000000
- 29805 multiletter control sequences out of 15000+600000
+ 12574 strings out of 478862
+ 188496 string characters out of 5858946
+ 508491 words of memory out of 6000000
+ 29943 multiletter control sequences out of 15000+600000
  412162 words of font info for 48 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  70i,11n,77p,580b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rep-cmsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rep-cmrm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmsy7.pfb>
-Output written on solution.pdf (7 pages, 224639 bytes).
+Output written on solution.pdf (22 pages, 820478 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

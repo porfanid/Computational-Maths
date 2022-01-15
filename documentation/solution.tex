@@ -7,6 +7,8 @@
 \usepackage{mathtools}
 \usepackage{breqn}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {../Euler/}, {../ImprovedEuler/}, {../Problem_1_3/}, {../problem2d/} }
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -254,14 +256,32 @@
             .                     & .\\
             $t_n=t_0+nh$          &  \\
         \end{tabular}
-
+%-------------------------------------------------------------------------
+% Images
+%-------------------------------------------------------------------------
         \subsection{Grafik'es parast'aseis}
         \subsubsection*{1a) $Euler$}
-
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Euler1.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Euler2.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Euler3.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Euler4.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Euler5.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Euler6.png}}
         \subsubsection*{1a) Beltiwm'enh $Euler$}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{ImprovedEuler1.png}}
+        
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{ImprovedEuler2.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{ImprovedEuler3.png}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{ImprovedEuler4.png}}
 
         \subsubsection*{1g) $Euler$ kai beltiwm'enh}
-
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{problem_1_3_1}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{problem_1_3_2}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{problem_1_3_3}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{problem_1_3_4}}
+%-------------------------------------------------------------------------
+%-------------------------------------------------------------------------
+%-------------------------------------------------------------------------
         \section{Pr'oblhma 2}
         \subsection{Dedom'ena}
         \begin{equation}
@@ -285,6 +305,11 @@
         \hfill M'ono p'oloi
         \[\frac{X(s)}{S_{des}}=\frac{1}{\frac{ms^2}{k_{ps}}+\frac{s(k_{ds}+b_s)}{k_{ps}}+1}\]
         \[H(s)=\frac{X(s)}{U(s)}=\frac{1}{\frac{ms^2}{k_{ps}}+\frac{s(k_{ds}+b_s)}{k_{ps}}+1}\]\hfill Sun'arthsh metafor'as
+
+        L'unw to polu'wnumo $2_{o\upsilon}$ bajmo'u $\frac{mr^2}{k_{ps}}+s\frac{k_{ds}+b_s}{k_{ps}}+1$ \par
+        'Ara oi p'oloi e'inai:
+        \[\Delta=\frac{k_{ds}+b_s}{k_{ps}}-4\frac{m}{k_{ps}}\]
+        \[r_{1,2}=\frac{-\frac{k_{ds}+b_s}{k_{ps}}\pm \sqrt{\Delta}}{2\frac{m}{k_{ps}}}\]
 %-----------------------------------------------------------------------------------------------------------------------------------------------------
 
         \subsection{g}
@@ -320,5 +345,10 @@
         \[(\ref{eq:s1})\xRightarrow{(\ref{eq:s2})}c_1=-s_{des}r_1(r_2-r_1)-s_{des}=-s_{des}(\frac{r_1}{r_2-r_1}+1)\]
         \subsubsection{Analutik'h L'ush}
         \[s=s_{des}+(-s_{des}(\frac{r_1}{r_2-r_1}+1))e^(r_1t)+\frac{s_{des}r_1e^{r_2t}}{-r_1+r_2}\]
-        \[\]
+
+
+        \subsection{Eik'ones}
+        \subsection{2.g)}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{problem2d_1}}
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{problem2d_2}}
 \end{document}
