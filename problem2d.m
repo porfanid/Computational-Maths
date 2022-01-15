@@ -5,7 +5,7 @@ function problem2d()
   AM = 4835;
   Kps=5;
   Kds=15+(AM/1000);  
-  t = 0:0.1:30;
+  t = 0:0.001:30;
   Sdes = AM/200;
   
   s(1)=0;
