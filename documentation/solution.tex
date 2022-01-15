@@ -91,7 +91,18 @@
                 $t_n=t_0+nh$                                                &                         
             \end{tabular}
 
-
+            \subsubsection*{$Euler$ $s$}
+            \begin{tabular}{ll}
+                Εφαρμόζουμε την μέθοδο $Euler$:                             &                               \\
+                $t_n=t_0+nh$                                                & $s_{n+1}=s_n+hs'_n$   \\
+                το οποίο σημαίνει ότι:                                      & $s_1=s_0+hs'_0$            \\
+                $t_1=t_0+1h$                                                & $s_2=s_1+hs'_1$            \\
+                $t_2=t_0+2h$                                                & .                             \\
+                .                                                           & .                             \\
+                .                                                           & .                             \\
+                .                                                           &                               \\
+                $t_n=t_0+nh$                                                &                         
+            \end{tabular}
             \subsection*{Στροφική κίνηση}
             
             \begin{equation}
@@ -112,14 +123,14 @@
 
         \begin{tabular}{l|l}
             \multicolumn{2}{c}{Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$: }\\
-            $t_n=t_0+nh$ & $s'_{n+1}=s'_n+\frac{h}{2}{[f'(t_n, s'_n)+f'(t_n+h, s'_n+hf'(t_n,s'_n))]}$\\
-            το οποίο σημαίνει ότι:& $s'_n+\frac{h}{2}{[\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}+\frac{f_1+f_2}{m}-\frac{\lvert s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}\rvert}{m}\frac{(s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m})}{m}]}$\\
+            $t_n=t_0+nh$ & $s'_{n+1}=s'_n+\frac{h}{2}{[f'(t_n,s_n+s'_n, s'_n)+f'(t_n+h, s'_n+hf'(t_n,s'_n))]}$\\
+            το οποίο σημαίνει ότι:& $s'_{n+1}=s'_{n}+\frac{h}{2}[s''(n)+\frac{f_1+f_2}{m}-\frac{(b_s\rvert s'_n+hs''_n\lvert(s'_n+hs''_n))}{m}]$\\
             $t_1=t_0+1h$          &το οποίο σημαίνει ότι: \\
-            $t_2=t_0+2h$          & $s'_1=s'_0+\frac{h}{2}{[\frac{f_1+f_2-b_s\rvert s'_0 \lvert s'}{m}+\frac{f_1+f_2}{m}-\frac{\lvert s'_0+h\frac{f_1+f_2-b_s\rvert s'_0 \lvert s'}{m}\rvert}{m}\frac{(s'_0+h\frac{f_1+f_2-b_s\rvert s'_0 \lvert s'}{m})}{m}]}$\\
+            $t_2=t_0+2h$          & $s'_1=s'_0+\frac{h}{2}{[s''_0+\frac{f_1+f_2}{m}+\frac{\lvert b_ss'_0+hs''_0\rvert(b_ss'_0+hs''_0)}{m}]}$\\
             .                     & .\\
             .                     & .\\
             .                     & .\\
-            $t_n=t_0+nh$          & $s'_n+\frac{h}{2}{[\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}+\frac{f_1+f_2}{m}-\frac{\lvert s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m}\rvert}{m}\frac{(s'_n+h\frac{f_1+f_2-b_s\rvert s'_n \lvert s'}{m})}{m}]}$ \\
+            $t_n=t_0+nh$          &  \\
         \end{tabular}
         
         
@@ -127,17 +138,21 @@
         % Changes required
       %--------------------------------------------------------------------
         \subsubsection*{Bελτιωμένη μέθοδος $Euler$ $s$}
-        \[s''_n=\frac{k_{ps}(s_{des}-s)-K_{ds}s'-b_s\lvert s'\rvert s'}{m}=f(t,s,s')\]
-        \[s'_{n+1}=s'_n+\frac{h}{2}[f(t,s,s')+f(t_n+h,s_n+k'_n, s'_n+f(t,s,s'))]\]
-        \[s'_{n+1}=s'_n+\frac{h}{2}\frac{k_{ps}(s_{des}-(s_n+hs'_n))-k_{ds}(s'_n+hs'_n)-b_s\lvert s'_n+hs'_n \rvert(s'_n+hs'_ns'_n+hs'_n)}{m}\]
-        \[
-        \begin{Bmatrix}
-            s'_n+\frac{h}{2}[s''_n+\frac{k_{ps}(s_{des}-(s_n+hs'_n))-k_{ds}(s'n+hs'_n)-b_s\lvert s'_n+hs'_n\rvert(s'_n+hs'_n)}{m}]\\
-        \end{Bmatrix} 
-        \]
-        \[s_{n+1}=s_n+\frac{h}{2}[s'_n+s'_{n+1}]\]
-        \[s_1=s_0+\frac{h}{2}[s'_0+s'_1]\]
-        \[s_2=s_1+\frac{h}{2}[s'_1+s'_2]\]
+        H peplegm'enh morf'h pou mas bohj'a kai ja efarm'osoume e'inai:
+
+        \begin{tabular}{l|l}
+            \multicolumn{2}{c}{Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$: }\\
+            $t_n=t_0+nh$ & $s_{n+1}=s_n+\frac{h}{2}[s'_n+s'_{n+1}]$\\
+            το οποίο σημαίνει ότι:& $s_1=s_0+\frac{h}{2}[s'_0+s'_1]$\\
+            $t_1=t_0+1h$          &$s_2=s_1+\frac{h}{2}[s'_1+s'_2]$ \\
+            $t_2=t_0+2h$          & .\\
+            .                     & .\\
+            .                     & .\\
+            .                     & .\\
+            $t_n=t_0+nh$          &  \\
+        \end{tabular}
+        
+        
         \subsection*{Στροφική κίνηση}
 
         \begin{dmath}
@@ -202,7 +217,7 @@
 
 
 
-        \subsection{Πρόβλημα 1γ: Βελτιωμένη Μέθοδος Euler}
+        \subsection{Πρόβλημα 1γ: Βελτιωμένη Μέθοδος $Euler$}
 
         \subsubsection{Δεδομένα}
 
@@ -211,36 +226,43 @@
         \[K_{ds} = 15 + (AM/ 100)\]
         \[S_0 =0\]
         \[S_{des} = AM / 200\]
-
+        \[s''=\frac{k_{ps}(s_{des}-s)-k_{ds}s'-b_s\lvert s'\rvert s'}{m}=f'(t,s,s')\]
+        \[s'=f(t,s)\]
         \subsubsection{Μεταφορική Κίνηση}   
-        Για την $s(t)$:
+        Για την $s'(t)$:
 
         \begin{tabular}{ll}
-            $t_n = t_0 + nh$		&			$s_{n+1} = s_n  + hs'_n$\\
-            $t_1 = t_0  + 1h$		&			$s_1    = s_0  + hs'_0$\\
-            $t_2 = t_0  + 2h$		&			$s_2    = s_1  + hs'_1$\\
+            $t_n = t_0 + nh$		&	$s'_{n+1}=s'_n+\frac{h}{2}[f'(t,s,s')+f'(t_n+h, s_n+f(t_n, s), s'_n+f'(t,s,s'))]$\\
+            $t_1 = t_0  + 1h$		&	$s'_{n+1}=s'_n+\frac{h}{2}[s''_n+\frac{(k_{ps}(s_{des}-(s_n+hs'_n))-k_{ds}(s'_n+hs''_n)-b_s\lvert s'_n+h''_n\rvert(s'_n+h''_n))}{m}]$\\
+            $t_2 = t_0  + 2h$		&	$s'_{1}=s'_0+\frac{h}{2}[s''_0+\frac{(k_{ps}(s_{des}-(s_0+hs'_0))-k_{ds}(s'_0+hs''_0)-b_s\lvert s'_0+h''_0\rvert(s'_0+h''_0))}{m}]$\\
             \multicolumn{2}{c}{.}\\
             \multicolumn{2}{c}{.}\\
             \multicolumn{2}{c}{.}\\
-            $t_{30.000} = t_0 + 30.000h$&			     $s_{30.000} = s_{29.999} + hs'_{29.999}$
+            $t_{30.000} = t_0 + 30.000h$&
         \end{tabular}
 
+        \vspace{70pt}
 
+        \begin{tabular}{l|l}
+            \multicolumn{2}{c}{Εφαρμόζουμε την βελτιωμένη μέθοδο $Euler$: }\\
+            $t_n=t_0+nh$ & $s_{n+1}=s_n+\frac{h}{2}[s'_n+s'_{n+1}]$\\
+            το οποίο σημαίνει ότι:& $s_1=s_0+\frac{h}{2}[s'_0+s'_1]$\\
+            $t_1=t_0+1h$          &$s_2=s_1+\frac{h}{2}[s'_1+s'_2]$ \\
+            $t_2=t_0+2h$          & .\\
+            .                     & .\\
+            .                     & .\\
+            .                     & .\\
+            $t_n=t_0+nh$          &  \\
+        \end{tabular}
 
-        \begin{dmath}
-            s_{n+1}=
-                    s_n + \frac{h}{2}[f(t_n, s_n) + f(t_n + h, s_n + h (f(t_n,s_n ))]
-                    =s_n+ \frac{h}{2}[f (t_n, s_n) + [- (t_1+t_2)-K_{ps} (s_{des}- (s_n + h (\frac{- (f_1 + f_2)-K_{ps} (s_{des}-s_n)}{m}))]|K_{ds}
-        \end{dmath}
+        \subsection{Grafik'es parast'aseis}
+        \subsubsection*{1a) $Euler$}
 
-        Για τη $s'(t)$:
+        \subsubsection*{1a) Beltiwm'enh $Euler$}
 
-        \[s'_{n+1} = s'_n + \frac{h}{2}[f'(t_n, s_n) + f (t_n + h, s'_n + h (  f' (t_n,s_n )))]\]
+        \subsubsection*{1g) $Euler$ kai beltiwm'enh}
 
-        Οπότε,
-
-        \[s'_n  + (h/2)(f'(t_n, s_n) + \frac{(f_1 + f_2) - b_s (s'_n + h  \lvert  (f_1 + f_2) - b_s\rvert s'_n |s'_n}{m}  \lvert  \frac{S'_n + h (f_1 + f_2)  - b_s |s'_n|s'_n}{m}  \rvert  m) \]
-    \section{Pr'oblhma 2}
+        \section{Pr'oblhma 2}
         \subsection{Dedom'ena}
         \begin{equation}
             ms''=(f_1+f_2)-b_ss'

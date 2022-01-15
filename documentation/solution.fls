@@ -697,8 +697,8 @@ INPUT /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT solution.aux
 INPUT ./solution.out
 INPUT ./solution.out
-INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rep-cmsc.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rep-cmrm.enc
