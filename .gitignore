@@ -1,0 +1,149 @@
+# MATLAB/Octave specific files
+*.m~
+*.mat
+*.fig
+*.p
+*.slx
+*.mdlp
+*.slxp
+*.sldd
+*.dmr
+*.slreq
+*.mlx
+*.mlapp
+
+# MATLAB autosave files
+*.asv
+
+# MATLAB temporary files  
+*.tmp
+
+# MATLAB Simulink cache files
+slprj/
+*.slxc
+
+# MATLAB Code Generation
+codegen/
+
+# MATLAB App Designer
+*.mlappinstall
+
+# MATLAB Compiler
+*.mlib
+*.app
+
+# MATLAB Distributed Computing Server
+*.mps
+
+# MATLAB Web App Server
+*.webapps
+
+# Octave specific files
+octave-workspace
+
+# Generated figures and output
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.eps
+*.svg
+*.tiff
+
+# But keep example figures in documentation
+!documentation/figures/*.png
+!documentation/figures/*.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.xdy
+
+# LaTeX output (but keep source)
+*.pdf
+!documentation/solution.pdf
+
+# Backup files
+*~
+*.backup
+*.bak
+*.orig
+
+# Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Log files
+*.log
+
+# Temporary directories
+tmp/
+temp/
+cache/
+
+# Data files (if large)
+data/*.csv
+data/*.txt
+data/*.dat
+
+# But keep small example data
+!data/examples/
+!data/test_cases/
+
+# Results and output directories
+results/
+output/
+plots/
+
+# Profiling data
+profile_results/
+*.prof
+
+# Coverage reports
+coverage/
+htmlcov/
+
+# Documentation build artifacts
+docs/_build/
+docs/build/
+
+# Virtual environments (if using Python alongside)
+venv/
+env/
+.env
+
+# Package manager files
+*.lock
